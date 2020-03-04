@@ -1,4 +1,4 @@
-package com.coets.project;
+package com.coets.project.fase3;
 
 public class CoetF3 {
 
@@ -14,10 +14,10 @@ public class CoetF3 {
     public CoetF3(String codi, int numPropulsors, int[] potenciaMaxima) throws Exception {
 
         // Check number of characters of codi
-        if (codi.length()>8) throw new Exception("Error: el codi del coet no pot tenir més de 8 caracters.");
+        if (codi.length()>8) throw new Exception("Error: el codi del coet no pot tenir mï¿½s de 8 caracters.");
 
         // Check if the array potenciaMaxima contains the as many values as engines has the rocket
-        if (potenciaMaxima.length!=numPropulsors) throw new Exception("Error: la potència inicial indicada no " +
+        if (potenciaMaxima.length!=numPropulsors) throw new Exception("Error: la potï¿½ncia inicial indicada no " +
                 "coincideix amb el nombre de motors del coet.");
 
         // Initialize members
@@ -48,16 +48,16 @@ public class CoetF3 {
     public void accelerate (int[] powers) throws Exception {
 
         // Check if the engine is being accelerated/braked
-        if (isChangingSpeed()) throw new Exception("Error: en aquests moments no és possible accelerar. \nAl menys un" +
-                " dels motors està en procès d'acceleració o frenada.");
+        if (isChangingSpeed()) throw new Exception("Error: en aquests moments no ï¿½s possible accelerar. \nAl menys un" +
+                " dels motors estï¿½ en procï¿½s d'acceleraciï¿½ o frenada.");
 
         // Check that int[] has the same number of elements as engines has the rocket
-        if (powers.length!=numPropulsors) throw new Exception("Error: el nombre de potències objectiu indicades no " +
+        if (powers.length!=numPropulsors) throw new Exception("Error: el nombre de potï¿½ncies objectiu indicades no " +
                 "coincideix amb el nombre de propulsors del coet.");
 
         // Check that there is no any power below the current power
         for (int i=0;i<numPropulsors;i++) {
-            if (powers[i]<potenciaActual[i]) throw new Exception("Error: s'ha indicat una potència inferior a l'actual" +
+            if (powers[i]<potenciaActual[i]) throw new Exception("Error: s'ha indicat una potï¿½ncia inferior a l'actual" +
                     " al propulsor " + i);
         }
 
@@ -111,16 +111,16 @@ public class CoetF3 {
     public void brake (int[] powers) throws Exception {
 
         // Check if the engine is being accelerated/braked
-        if (isChangingSpeed()) throw new Exception("Error: en aquests moments no és possible frenar. \nAl menys un" +
-                " dels motors està en procès d'acceleració o frenada.");
+        if (isChangingSpeed()) throw new Exception("Error: en aquests moments no ï¿½s possible frenar. \nAl menys un" +
+                " dels motors estï¿½ en procï¿½s d'acceleraciï¿½ o frenada.");
 
         // Check that int[] has the same number of elements as engines has the rocket
-        if (powers.length!=numPropulsors) throw new Exception("Error: el nombre de potències objectiu indicades no " +
+        if (powers.length!=numPropulsors) throw new Exception("Error: el nombre de potï¿½ncies objectiu indicades no " +
                 "coincideix amb el nombre de propulsors del coet.");
 
         // Check that there is no any indicated power above the current power
         for (int i=0;i<numPropulsors;i++) {
-            if (powers[i]>potenciaActual[i]) throw new Exception("Error: s'ha indicat una potència superior a l'actual" +
+            if (powers[i]>potenciaActual[i]) throw new Exception("Error: s'ha indicat una potï¿½ncia superior a l'actual" +
                     " al propulsor " + i);
         }
 

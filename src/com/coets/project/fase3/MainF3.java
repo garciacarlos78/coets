@@ -1,4 +1,4 @@
-package com.coets.project;
+package com.coets.project.fase3;
 
 import static java.lang.System.exit;
 
@@ -19,18 +19,18 @@ public class MainF3 {
         // Show rocket data
         System.out.println("Dades del coet 1:");
         System.out.println("Codi: " + coet1.getCodi());
-        System.out.println("Número de propulsors: " + coet1.getNumPropulsors());
+        System.out.println("Nï¿½mero de propulsors: " + coet1.getNumPropulsors());
         int[] potencies=coet1.getPotenciaMaxima();
         for (int i=0;i<potencies.length;i++) {
-            System.out.println("Potència màxima propulsor " + (i+1) + ": " + potencies[i]);
+            System.out.println("Potï¿½ncia mï¿½xima propulsor " + (i+1) + ": " + potencies[i]);
         }
 
         System.out.println("Dades del coet 2:");
         System.out.println("Codi: " + coet2.getCodi());
-        System.out.println("Número de propulsors: " + coet2.getNumPropulsors());
+        System.out.println("Nï¿½mero de propulsors: " + coet2.getNumPropulsors());
         potencies=coet2.getPotenciaMaxima();
         for (int i=0;i<potencies.length;i++) {
-            System.out.println("Potència màxima propulsor " + (i+1) + ": " + potencies[i]);
+            System.out.println("Potï¿½ncia mï¿½xima propulsor " + (i+1) + ": " + potencies[i]);
         }
 
         // Power increase
