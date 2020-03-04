@@ -63,8 +63,10 @@ public class Coet {
     	
     	// Else, modify power of each thruster
     	for (int i=0;i<targetPower.length;i++) {
-   			thrusters.get(i).changePower(targetPower[i], i);
-    	}    	
+//			System.out.println("*************** Sending acceleration order to thruster #" + i + " ******************");
+			thrusters.get(i).changePower(targetPower[i], i);
+//			System.out.println("*************** Sent acceleration order to thruster #" + i + " ******************");
+		}
     };
     
 	public void frenar(int[] targetPower) throws Exception {
@@ -100,10 +102,10 @@ public class Coet {
     		throw new Exception("Error: La potència total demanada supera la potència màxima del coet."
     				+ "\nPotència demanada: " + totalTargetPower + " - Potència màxima: " + getMaxPower());
     	
-    	// "Iterables" checks:
-    	//	-There is no any negative target power
-    	// 	-There is no any thruster accelerating nor braking
-    	// 	-There is no any individual target power greater than maximum thruster power
+    	// "Iterable" checks:
+    	//	-There is no negative target power
+    	// 	-There is no thruster accelerating nor braking
+    	// 	-There is no individual target power greater than maximum thruster power
     	StringBuilder sb = new StringBuilder("Error: la potència objectiu d'un o més propulsors supera la seva potència màxima.");
 		boolean proceed = true;
     	for (int i=0;i<targetPower.length;i++) {

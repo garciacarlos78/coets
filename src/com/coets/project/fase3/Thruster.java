@@ -24,8 +24,9 @@ public class Thruster {
 
 		// Check if targetPower is different from current power
 		if (targetPower==currentPower) return;
-		else if (targetPower>currentPower) new accelerateThread(targetPower, thrusterNumber).run();
-		else new brakeThread(targetPower, thrusterNumber).run();		
+		else if (targetPower>currentPower) new accelerateThread(targetPower, thrusterNumber).start();
+		else new Thread(new brakeThread(targetPower, thrusterNumber)).start();
+//		System.out.println("*************** RETURNING FROM changePower Thruster #" + thrusterNumber + " ******************");
 	}
 
 	private class accelerateThread extends Thread {
@@ -46,7 +47,7 @@ public class Thruster {
 
 			System.out.println("Accelerating engine number " + thrusterNumber +"... Current power: "
 					+ currentPower + " - Maximum power: " + maxPower +
-					" - Goal power: " + targetPower);
+					" - Target power: " + targetPower);
 
 			while (currentPower<targetPower)
 			{
@@ -61,7 +62,7 @@ public class Thruster {
 		}
 	}
 
-	private class brakeThread extends Thread {
+	private class brakeThread implements Runnable {
 
 		private int targetPower;
 		private int thrusterNumber;
@@ -94,36 +95,3 @@ public class Thruster {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
