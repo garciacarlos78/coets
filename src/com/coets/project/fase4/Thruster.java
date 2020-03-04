@@ -20,6 +20,8 @@ public class Thruster {
 
 	public int getCurrentPower() { return currentPower;}
 
+	public int getAvailablePower() { return getMaxPower()-getCurrentPower();}
+
 
 
 	public void changePower(int targetPower, int thrusterNumber) {

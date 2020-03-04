@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7318350d-22d6-404a-a716-f3befec1d34f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Coet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Thruster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Coet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Coet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$accelerateThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$brakeThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/MainF3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$accelerateThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$accelerateThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$brakeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$brakeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase3/Coet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase3/Coet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase3/Thruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase3/Thruster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase4/Coet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Coet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase4/Thruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Thruster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +26,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/coets/project/fase4" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -104,6 +93,10 @@
       <screen x="0" y="27" width="1280" height="997" />
     </state>
     <state x="129" y="160" width="1022" height="737" key="SettingsEditor/0.27.1280.997@0.27.1280.997" timestamp="1583338770987" />
+    <state x="296" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1583350564569">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state x="296" y="353" key="com.intellij.ide.util.TipDialog/0.27.1280.997@0.27.1280.997" timestamp="1583350564569" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/coets$Main.ic" NAME="Main Coverage Results" MODIFIED="1583339479667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
