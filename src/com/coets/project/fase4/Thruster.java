@@ -20,6 +20,8 @@ public class Thruster {
 
 	public int getCurrentPower() { return currentPower;}
 
+
+
 	public void changePower(int targetPower, int thrusterNumber) {
 
 		// Check if targetPower is different from current power
@@ -27,6 +29,10 @@ public class Thruster {
 		else if (targetPower>currentPower) new accelerateThread(targetPower, thrusterNumber).start();
 		else new Thread(new brakeThread(targetPower, thrusterNumber)).start();
 //		System.out.println("*************** RETURNING FROM changePower Thruster #" + thrusterNumber + " ******************");
+	}
+
+	public boolean isChangingPower() {
+		return this.changingPower;
 	}
 
 	private class accelerateThread extends Thread {
