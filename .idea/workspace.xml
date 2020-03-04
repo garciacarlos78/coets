@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7318350d-22d6-404a-a716-f3befec1d34f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase1/Coet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase1/Coet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase1/Thruster.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase1/Thruster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase2/Coet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase2/Coet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase2/Thruster.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase2/Thruster.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Coet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coets/project/fase4/Thruster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Coet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Coet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$accelerateThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$accelerateThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$brakeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$brakeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$accelerateThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3$brakeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/CoetF3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/MainF3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/MainF3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/MainF3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$accelerateThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$accelerateThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$brakeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster$brakeThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase3/Thruster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase4/CoetF4$accelerateThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase4/CoetF4$accelerateThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase4/CoetF4$brakeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase4/CoetF4$brakeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase4/CoetF4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase4/CoetF4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/coets/project/fase4/MainF4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/coets/project/fase4/MainF4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase3/Coet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase3/Coet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/coets/project/fase3/Thruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coets/project/fase3/Thruster.java" afterDir="false" />
@@ -29,6 +23,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="175" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,10 +38,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/coets/project/fase4" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/coets/project/fase4" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,22 +84,22 @@
       <screen x="0" y="27" width="1280" height="997" />
     </state>
     <state x="235" y="187" width="800" height="684" key="#Project_Structure/0.27.1280.997@0.27.1280.997" timestamp="1583338713002" />
-    <state width="1234" height="364" key="GridCell.Tab.0.bottom" timestamp="1583340671689">
+    <state width="1234" height="782" key="GridCell.Tab.0.bottom" timestamp="1583342881977">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state width="1234" height="364" key="GridCell.Tab.0.bottom/0.27.1280.997@0.27.1280.997" timestamp="1583340671689" />
-    <state width="1234" height="364" key="GridCell.Tab.0.center" timestamp="1583340671688">
+    <state width="1234" height="782" key="GridCell.Tab.0.bottom/0.27.1280.997@0.27.1280.997" timestamp="1583342881977" />
+    <state width="1234" height="782" key="GridCell.Tab.0.center" timestamp="1583342881977">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state width="1234" height="364" key="GridCell.Tab.0.center/0.27.1280.997@0.27.1280.997" timestamp="1583340671688" />
-    <state width="1234" height="364" key="GridCell.Tab.0.left" timestamp="1583340671688">
+    <state width="1234" height="782" key="GridCell.Tab.0.center/0.27.1280.997@0.27.1280.997" timestamp="1583342881977" />
+    <state width="1234" height="782" key="GridCell.Tab.0.left" timestamp="1583342881976">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state width="1234" height="364" key="GridCell.Tab.0.left/0.27.1280.997@0.27.1280.997" timestamp="1583340671688" />
-    <state width="1234" height="364" key="GridCell.Tab.0.right" timestamp="1583340671689">
+    <state width="1234" height="782" key="GridCell.Tab.0.left/0.27.1280.997@0.27.1280.997" timestamp="1583342881976" />
+    <state width="1234" height="782" key="GridCell.Tab.0.right" timestamp="1583342881977">
       <screen x="0" y="27" width="1280" height="997" />
     </state>
-    <state width="1234" height="364" key="GridCell.Tab.0.right/0.27.1280.997@0.27.1280.997" timestamp="1583340671689" />
+    <state width="1234" height="782" key="GridCell.Tab.0.right/0.27.1280.997@0.27.1280.997" timestamp="1583342881977" />
     <state x="129" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1583338770987">
       <screen x="0" y="27" width="1280" height="997" />
     </state>

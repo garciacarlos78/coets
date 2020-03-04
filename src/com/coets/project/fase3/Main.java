@@ -24,17 +24,20 @@ public class Main {
         
         // Accelerate rocket
 		accelerateTests(coet1);
+		
+		// Brake rocket
+		brakeTests(coet1);
 
 
     }
 
-	private static void accelerateTests(Coet coet1) {
+	private static void accelerateTests(Coet coet) {
 
 		// Testing 1: target array differ in number of thrusters
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing target array with bad number of thrusters...");
-			coet1.accelerar(new int[] {2, 5});
+			System.out.println("Accelerate: Testing target array with bad number of thrusters...");
+			coet.accelerar(new int[] {2, 5});
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -42,8 +45,8 @@ public class Main {
 		// Testing 2: target array exceeds rocket maximum power
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing target array exceeding total rocket power...");
-			coet1.accelerar(new int[] {10, 30, 81});
+			System.out.println("Accelerate: Testing target array exceeding total rocket power...");
+			coet.accelerar(new int[] {10, 30, 81});
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -51,8 +54,8 @@ public class Main {
 		// Testing 3: target array exceeds rocket maximum power
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing target array with less total power than current power...");
-			coet1.accelerar(new int[] {0, 0, 0});
+			System.out.println("Accelerate: Testing target array with less total power than current power...");
+			coet.accelerar(new int[] {0, 0, 0});
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -60,8 +63,8 @@ public class Main {
 		// Testing 4: target array exceeds thruster maximum power
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing target array exceeding thruster power...");
-			coet1.accelerar(new int[] {11, 10, 81});
+			System.out.println("Accelerate: Testing target array exceeding thruster power...");
+			coet.accelerar(new int[] {11, 10, 81});
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -69,59 +72,64 @@ public class Main {
 		// Testing 5: target array contains a negative power
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing target array with negative power...");
-			coet1.accelerar(new int[] {5, -1, 75});
+			System.out.println("Accelerate: Testing target array with negative power...");
+			coet.accelerar(new int[] {5, -1, 75});
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 
-		// Testing 6: target array is correct
+		// Testing 7: target array is correct
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing acceleration with correct array...");
-			coet1.accelerar(new int[] {5, 15, 40});
+			System.out.println("Accelerate: Testing acceleration with correct array...");
+			coet.accelerar(new int[] {5, 15, 40});
 		} catch (Exception e){
 			System.out.println(e.getMessage());
-			exit(1);
 		}
 
-		// Testing 7: an acceleration order is sent while the rocket is still accelerating
+		// Testing 8: an acceleration order is sent while the rocket is still accelerating
 		try {
 			System.out.println("========================================================================================");
-			System.out.println("Testing change speed while still changing former speed...");
-			coet1.accelerar(new int[] {10, 15, 40});
+			System.out.println("Accelerate: Testing change speed while still changing former speed...");
+			coet.accelerar(new int[] {10, 15, 40});
 		} catch (Exception e){
 			System.out.println(e.getMessage());
 		}
-    }
+
+		// Wait until rocket is not accelerating
+		while (coet.isChangingPower()){}
+
+		// Testing 9: an acceleration order is sent with less total power than current power
+		try {
+			System.out.println("========================================================================================");
+			System.out.println("Accelerate: Testing acceleration order with less total power than current power...");
+			coet.accelerar(new int[] {5, 15, 30});
+		} catch (Exception e){
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	private static void brakeTests(Coet coet) {
+
+    	// Common tests are ignored as they use the same function as accelerate method
+
+		// Testing 1: target array exceeds rocket current power
+		try {
+			System.out.println("========================================================================================");
+			System.out.println("Brake: Testing target array with more total power than current power...");
+			coet.frenar(new int[] {10, 15, 50});
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+		// Testing 2: target array is correct
+		try {
+			System.out.println("========================================================================================");
+			System.out.println("Brake: Testing brake with correct array...");
+			coet.frenar(new int[] {0, 12, 20});
+		} catch (Exception e){
+			System.out.println(e.getMessage());
+		}
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

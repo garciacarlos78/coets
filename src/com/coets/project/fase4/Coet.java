@@ -1,4 +1,4 @@
-package com.coets.project.fase3;
+package com.coets.project.fase4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -39,7 +39,8 @@ public class Coet {
     public int getMaxPower() {
     	return Arrays.stream(getMaxPowerArray()).sum();
     }
-
+    
+    
     // Fase3 add: get the current power
     private int getCurrentPower() {
     	int currentPower = 0;
@@ -73,7 +74,7 @@ public class Coet {
     	// Common checks: checks needed when accelerating and when braking
     	commonChecks(targetPower);    	
     	
-    	// Check if target power is higher than current power. If higher, throw exception.
+    	// Check if target power is lower than current power. If not lower, throw exception.
     	int totalTargetPower = IntStream.of(targetPower).sum();
     	if (totalTargetPower>=getCurrentPower())
     		throw new Exception("Error: La potència total ha de ser inferior a la potència actual del coet."
@@ -86,13 +87,6 @@ public class Coet {
    			thrusters.get(i).changePower(targetPower[i], i);
     	}    	
 	};
-
-	public boolean isChangingPower() {
-		for (Thruster t: this.thrusters) {
-			if (t.isChangingPower()) return true;
-		}
-		return false;
-	}
     
     private void commonChecks(int[] targetPower) throws Exception {
     	
