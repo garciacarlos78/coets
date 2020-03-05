@@ -23,13 +23,67 @@ public class Main {
         System.out.println(coet2.getCodi() + ": " + Arrays.toString(coet2.getMaxPowerArray()));
 
         // Accelerate rocket
-		accelerateTests(coet1);
+		//accelerateTests(coet1);
 
 		// Brake rocket
-		brakeTests(coet1);
+		//brakeTests(coet1);
 
-
+		// Speed change tests
+		speedTests();
     }
+
+	private static void speedTests() {
+
+		try {
+			// Create a rocket
+			Coet coet = new Coet("SPEED!", new int[]{10, 20, 30});
+
+			// Accelerate from 0 to 100
+			coet.accelerate(0, 600);
+
+			// Wait until rocket is not modifying speed
+			Thread.sleep(1000);
+			while (coet.isChangingPower()) {}
+
+			// Brake from 100 to 0
+			coet.accelerate(100, 0);
+
+			// Wait until rocket is not modifying speed
+			Thread.sleep(1000);
+			while (coet.isChangingPower()) {}
+
+			// Accelerate to an unafordable speed
+			coet.accelerate(0,1000);
+
+			// Wait until rocket is not modifying speed
+			Thread.sleep(1000);
+			while (coet.isChangingPower()) {}
+
+			// Put the rocket to half-throttle
+			coet.accelerar(new int[] {5, 10, 15});
+
+			// Wait until rocket is not modifying speed
+			Thread.sleep(1000);
+			while (coet.isChangingPower()) {}
+
+			// Brake to an unafordable speed
+			coet.accelerate(5000,0);
+			
+			// Make the rocket throttle some thrusters and braking others
+			// 1. Put the throttles unbalanced
+			coet.frenar(new int[] {10, 5, 0});
+			
+			// Wait until rocket is not modifying speed
+			Thread.sleep(1000);
+			while (coet.isChangingPower()) {}
+
+			// 2. Order a speed change
+			coet.accelerate(50,  500);
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
 
 	private static void accelerateTests(Coet coet) {
 
